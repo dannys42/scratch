@@ -28,16 +28,53 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
+/* our assumption is that input is a string, and that there will be a given string */
+- (void)testThatItDoesNotFailWithInput {
+    MyString *testString = [[MyString alloc] init];
+    testString.string = @"Hello";
+    [testString appendWithString:@"Goodbye"];
+    //expect that output is HelloGoodbye
+    
+    testString.string = @"Goodbye";
+    [testString appendWithString:@"Hello"];
+    //expect that output is GoodbyeHello
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+- (void)testThatItDoesNotFailWithEmptyString {
+    MyString *testString = [[MyString alloc] init];
+    testString.string = @"Hello";
+    [testString appendWithString:@""];
+    //expect that output is Hello
+    
+    testString.string = @"";
+    [testString appendWithString:@"Goodbye"];
+    //expect that output is Goodbye
+    
+    testString.string = @"";
+    [testString appendWithString:@""];
+    //expect that output is @""
+}
+
+- (void)testThatItDoesNotFailWithNilString {
+    MyString *testString = [[MyString alloc] init];
+    testString.string = @"Hello";
+    [testString appendWithString:nil];
+    //expect that output is Hello
+    
+    testString.string = nil;
+    [testString appendWithString:@"Goodbye"];
+    //expect that output is Goodbye
+    
+    testString.string = nil;
+    [testString appendWithString:nil];
+    //expect that output is nil
+}
+
+- (void)testThatItDoesNotFailWithStringNumbers {
+    MyString *testString = [[MyString alloc] init];
+    testString.string = @"1234567890";
+    [testString appendWithString:@"Numbers"];
+    //expect that output is Numbers1234567890
 }
 
 @end
