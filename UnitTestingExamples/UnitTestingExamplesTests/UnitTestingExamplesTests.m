@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import <Expecta/Expecta.h>
+
+#import "MyString.h"
 
 @interface UnitTestingExamplesTests : XCTestCase
 

@@ -14,6 +14,7 @@
 		14116BF31B7992E0003C7090 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14116BF21B7992E0003C7090 /* Images.xcassets */; };
 		14116BF61B7992E0003C7090 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14116BF41B7992E0003C7090 /* LaunchScreen.xib */; };
 		14116C021B7992E1003C7090 /* UnitTestingExamplesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14116C011B7992E1003C7090 /* UnitTestingExamplesTests.m */; };
+		14116C0D1B79940E003C7090 /* MyString.m in Sources */ = {isa = PBXBuildFile; fileRef = 14116C0C1B79940E003C7090 /* MyString.m */; };
 		3406A7D48706C456480ABE26 /* libPods-UnitTestingExamplesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE9234DC588624AF74D3BE6 /* libPods-UnitTestingExamplesTests.a */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,8 @@
 		14116BFB1B7992E1003C7090 /* UnitTestingExamplesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTestingExamplesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14116C001B7992E1003C7090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14116C011B7992E1003C7090 /* UnitTestingExamplesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnitTestingExamplesTests.m; sourceTree = "<group>"; };
+		14116C0B1B79940E003C7090 /* MyString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyString.h; sourceTree = "<group>"; };
+		14116C0C1B79940E003C7090 /* MyString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyString.m; sourceTree = "<group>"; };
 		8FE9234DC588624AF74D3BE6 /* libPods-UnitTestingExamplesTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UnitTestingExamplesTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5734C3E66D2B03EB07721EA /* Pods-UnitTestingExamplesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTestingExamplesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UnitTestingExamplesTests/Pods-UnitTestingExamplesTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +95,8 @@
 				14116BEA1B7992E0003C7090 /* AppDelegate.m */,
 				14116BEC1B7992E0003C7090 /* ViewController.h */,
 				14116BED1B7992E0003C7090 /* ViewController.m */,
+				14116C0B1B79940E003C7090 /* MyString.h */,
+				14116C0C1B79940E003C7090 /* MyString.m */,
 				14116BEF1B7992E0003C7090 /* Main.storyboard */,
 				14116BF21B7992E0003C7090 /* Images.xcassets */,
 				14116BF41B7992E0003C7090 /* LaunchScreen.xib */,
@@ -280,6 +285,7 @@
 			files = (
 				14116BEE1B7992E0003C7090 /* ViewController.m in Sources */,
 				14116BEB1B7992E0003C7090 /* AppDelegate.m in Sources */,
+				14116C0D1B79940E003C7090 /* MyString.m in Sources */,
 				14116BE81B7992E0003C7090 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
