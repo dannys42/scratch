@@ -14,6 +14,7 @@
 		14116BF31B7992E0003C7090 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14116BF21B7992E0003C7090 /* Images.xcassets */; };
 		14116BF61B7992E0003C7090 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14116BF41B7992E0003C7090 /* LaunchScreen.xib */; };
 		14116C021B7992E1003C7090 /* UnitTestingExamplesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14116C011B7992E1003C7090 /* UnitTestingExamplesTests.m */; };
+		3406A7D48706C456480ABE26 /* libPods-UnitTestingExamplesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE9234DC588624AF74D3BE6 /* libPods-UnitTestingExamplesTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03E82BA74816BDFD079052A1 /* Pods-UnitTestingExamplesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTestingExamplesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnitTestingExamplesTests/Pods-UnitTestingExamplesTests.release.xcconfig"; sourceTree = "<group>"; };
 		14116BE21B7992E0003C7090 /* UnitTestingExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTestingExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14116BE61B7992E0003C7090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14116BE71B7992E0003C7090 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +42,8 @@
 		14116BFB1B7992E1003C7090 /* UnitTestingExamplesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTestingExamplesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14116C001B7992E1003C7090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14116C011B7992E1003C7090 /* UnitTestingExamplesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnitTestingExamplesTests.m; sourceTree = "<group>"; };
+		8FE9234DC588624AF74D3BE6 /* libPods-UnitTestingExamplesTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UnitTestingExamplesTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5734C3E66D2B03EB07721EA /* Pods-UnitTestingExamplesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTestingExamplesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UnitTestingExamplesTests/Pods-UnitTestingExamplesTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3406A7D48706C456480ABE26 /* libPods-UnitTestingExamplesTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +71,8 @@
 				14116BE41B7992E0003C7090 /* UnitTestingExamples */,
 				14116BFE1B7992E1003C7090 /* UnitTestingExamplesTests */,
 				14116BE31B7992E0003C7090 /* Products */,
+				2C504FBC915785D311441340 /* Pods */,
+				FC72DA575A5C6C4F34CF4B59 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +126,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2C504FBC915785D311441340 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5734C3E66D2B03EB07721EA /* Pods-UnitTestingExamplesTests.debug.xcconfig */,
+				03E82BA74816BDFD079052A1 /* Pods-UnitTestingExamplesTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FC72DA575A5C6C4F34CF4B59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8FE9234DC588624AF74D3BE6 /* libPods-UnitTestingExamplesTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +167,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14116C081B7992E1003C7090 /* Build configuration list for PBXNativeTarget "UnitTestingExamplesTests" */;
 			buildPhases = (
+				F4B06BC80BE93F553029EA38 /* Check Pods Manifest.lock */,
 				14116BF71B7992E1003C7090 /* Sources */,
 				14116BF81B7992E1003C7090 /* Frameworks */,
 				14116BF91B7992E1003C7090 /* Resources */,
+				C70E994E23843509C3769F4D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,6 +239,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C70E994E23843509C3769F4D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UnitTestingExamplesTests/Pods-UnitTestingExamplesTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4B06BC80BE93F553029EA38 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		14116BDE1B7992E0003C7090 /* Sources */ = {
@@ -367,6 +426,7 @@
 		};
 		14116C091B7992E1003C7090 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5734C3E66D2B03EB07721EA /* Pods-UnitTestingExamplesTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -386,6 +446,7 @@
 		};
 		14116C0A1B7992E1003C7090 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03E82BA74816BDFD079052A1 /* Pods-UnitTestingExamplesTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -418,6 +479,7 @@
 				14116C071B7992E1003C7090 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		14116C081B7992E1003C7090 /* Build configuration list for PBXNativeTarget "UnitTestingExamplesTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +488,7 @@
 				14116C0A1B7992E1003C7090 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
