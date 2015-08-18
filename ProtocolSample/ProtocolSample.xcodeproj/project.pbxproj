@@ -14,6 +14,9 @@
 		141267661B82A4A300EF41E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 141267651B82A4A300EF41E3 /* Images.xcassets */; };
 		141267691B82A4A300EF41E3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 141267671B82A4A300EF41E3 /* LaunchScreen.xib */; };
 		141267751B82A4A300EF41E3 /* ProtocolSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 141267741B82A4A300EF41E3 /* ProtocolSampleTests.m */; };
+		141267801B82A4DD00EF41E3 /* Orange.m in Sources */ = {isa = PBXBuildFile; fileRef = 1412677F1B82A4DD00EF41E3 /* Orange.m */; };
+		141267831B82A50400EF41E3 /* Honda.m in Sources */ = {isa = PBXBuildFile; fileRef = 141267821B82A50400EF41E3 /* Honda.m */; };
+		141267861B82A51300EF41E3 /* Shop.m in Sources */ = {isa = PBXBuildFile; fileRef = 141267851B82A51300EF41E3 /* Shop.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		1412676E1B82A4A300EF41E3 /* ProtocolSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProtocolSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		141267731B82A4A300EF41E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		141267741B82A4A300EF41E3 /* ProtocolSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProtocolSampleTests.m; sourceTree = "<group>"; };
+		1412677E1B82A4DD00EF41E3 /* Orange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Orange.h; sourceTree = "<group>"; };
+		1412677F1B82A4DD00EF41E3 /* Orange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Orange.m; sourceTree = "<group>"; };
+		141267811B82A50400EF41E3 /* Honda.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Honda.h; sourceTree = "<group>"; };
+		141267821B82A50400EF41E3 /* Honda.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Honda.m; sourceTree = "<group>"; };
+		141267841B82A51300EF41E3 /* Shop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shop.h; sourceTree = "<group>"; };
+		141267851B82A51300EF41E3 /* Shop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shop.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +94,12 @@
 				1412675D1B82A4A300EF41E3 /* AppDelegate.m */,
 				1412675F1B82A4A300EF41E3 /* ViewController.h */,
 				141267601B82A4A300EF41E3 /* ViewController.m */,
+				1412677E1B82A4DD00EF41E3 /* Orange.h */,
+				1412677F1B82A4DD00EF41E3 /* Orange.m */,
+				141267811B82A50400EF41E3 /* Honda.h */,
+				141267821B82A50400EF41E3 /* Honda.m */,
+				141267841B82A51300EF41E3 /* Shop.h */,
+				141267851B82A51300EF41E3 /* Shop.m */,
 				141267621B82A4A300EF41E3 /* Main.storyboard */,
 				141267651B82A4A300EF41E3 /* Images.xcassets */,
 				141267671B82A4A300EF41E3 /* LaunchScreen.xib */,
@@ -220,8 +235,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				141267611B82A4A300EF41E3 /* ViewController.m in Sources */,
+				141267831B82A50400EF41E3 /* Honda.m in Sources */,
 				1412675E1B82A4A300EF41E3 /* AppDelegate.m in Sources */,
 				1412675B1B82A4A300EF41E3 /* main.m in Sources */,
+				141267801B82A4DD00EF41E3 /* Orange.m in Sources */,
+				141267861B82A51300EF41E3 /* Shop.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +436,7 @@
 				1412677A1B82A4A300EF41E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1412677B1B82A4A300EF41E3 /* Build configuration list for PBXNativeTarget "ProtocolSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +445,7 @@
 				1412677D1B82A4A300EF41E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
